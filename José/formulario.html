@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Hotel la Estancia</title>
+    <link rel="stylesheet" href="CSS/reservacion.css">
+</head>
+<body>
+</head>
+<body>    <!--form onsubmit="return validate()"-->
+  <form target="_self">
+    <div>
+      <h1>Habitaciones</h1>
+      <h3>Elija una habitacion :</h3>
+    </div>
+    <div>
+      <label for="categoria"></label>
+      <select name="categoria" required>
+        <option value="">Seleccione Habitacion …</option>
+        <option value="Habitacion Familiar">Habitacion Familiar</option>
+        <option value="Habitacion Doble">Habitacion Doble</option>
+        <option value="Habitacion Individual">Hbitacion Individual</option>
+        <option value="Suite">Suite Golden</option>
+      </select>
+    </div>
+    <div id="sabores">
+      <p><strong>Habitaciones que ofrecemos</strong></p>
+    </div>
+    <div>
+      <label for="sabor">Escriba el nombre de habitacion</label>
+      <input name="sabor" id="sabor" class="input" type="text" required>
+    </div>
+    <div>
+      <label for="cantidad">Cantidad:</label>
+      <input name="cantidad" id="cantidad" class="input" type="number" min=1 max=100 required>
+    </div>
+    <div>
+      <label for="cantidad">Tipo de habitacion</label><br>
+      
+      <input type="checkbox" name="size" id="small" value="pequeño" checked><label for="small">Spa (10)</label>
+      <input type="checkbox" name="size" id="medium" value="mediano"><label for="medium">Suana y Spa (20)</label>
+      <input type="checkbox" name="size" id="big" value="grande"><label for="big">Sauna, Spa y Bufet (40)</label>
+    </div>
+    <div>
+      <strong>Acompañantes:</strong><br>
+      <input type="checkbox" id="1 niño" name="1 niño" value="1 niño"><label for="1 niño">1 niño</label><br>
+      <input type="checkbox" id="2 niños" name="2 niños" value="2 niños"><label for="2 niños">2 niños</label><br>
+      <input type="checkbox" id="3 niños" name="3 niños" value="3 niños"><label for="3 niños">3 niños</label><br>
+      <input type="checkbox" id="4 niños" name="4 niños" value="4 niños"><label for="4 niños">4 niños</label><br>
+    </div>
+    <div>
+      <input type="submit" id="send-button" name="send-button" class="button">
+      <input type="reset" value="Borrar" class="button">
+    </div>
+  </form>
+  <div class="container" id="container">
+    <input type="button" id="finish" class="button" value="Reservacion Completa">
+  </div>
+  <script src="JS/reserva.js"></script>
+</body>
+</html>
+    

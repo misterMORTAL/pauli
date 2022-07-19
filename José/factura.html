@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Factura</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="bg-light container">
+    <h1 class="display-4 text-danger">Factura</h1>
+    <hr />
+    <main>
+        <section class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-tittle">Cabecera de Factura</h3>
+                        </div>
+                        <div class="card-body">
+                            <form class="row" id="formcabecera">
+                                <div class="form-group col-md-4">
+                                    <label for="">Nombre</label>
+                                    <input type="text" class="form-control" placeholder="Ingrese su nombre" id="nombre">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="">Email</label>
+                                    <input type="email" class="form-control" placeholder="hotelEstancia@gmail.com"
+                                        id="email">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="">Telefono</label>
+                                    <input type="telf" class="form-control" id="telefono">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="">Acompañantes</label>
+                                    <input type="number" class="form-control" id="acompañantes">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="">Fecha y hora de llegada</label>
+                                    <input type="datetime-local" class="form-control" id="horallegada">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="">Fecha y hora de Salida</label>
+                                    <input type="datetime-local" class="form-control" id="horasalida">
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-tittle">Reservacion</h3>
+                              </div>
+                            <div class="card-body">
+                                <form class="row" id="formDetalle">
+                                    <div class="form-group col-md-2">
+                                        <label for="">Numero de días.</label>
+                                        <input type="text" class="form-control" id="ndias">
+                                    </div>
+                                    <div class="form-group col-md-5">
+                                        <label for="">Descripción.</label>
+                                        <select id="descripcion1"  class="form-cotrol" >
+                                            <option value="0">--Selecione--</option>
+
+                                            
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label for="">Precio por día.</label>
+                                        <input type="number" id="dias" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label for="">Precio Total.</label>
+                                        <input type="number" id="total" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-1">
+                                        <button class="btn btn-primary" type="submit">Agregar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                        <div class="div col">
+                            <button class="btn btn-dark btn-lg" id="btnGuardar">Guardar Factura</button>
+                        </div>
+        </section>
+
+        <section class="row mt-4">
+            <div class="col">
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <th>Numero de días.</th>
+                            <th>Descripción.</th>
+                            <th>Precio por día.</th>
+                            <th>Precio total.</th>
+                            <th>Acciones</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpoTabla">
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+        <script src="js/Factura.js" ></script>
+</body>
+
+</html>

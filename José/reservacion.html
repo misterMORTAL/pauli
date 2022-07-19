@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos2.css">
+    <title>Document</title>
+</head>
+<body background="IMG/imagen.jpg">
+    <div class="main">
+        <!--MAIN-container-->
+        <div class="container">
+          <h2>Formulario de reservacion</h2>
+          <form action="mail.php" enctype="multipart/form-data" method="post" name="formulario_html5" autocomplete="off">
+            <label form="nombre">Nombres</label></br>
+            <input type="text" name="nombre" id="nombre" class="cajas"></br>
+          
+            <label form="email">Email</label></br>
+            <input type="email" name="email" id="email" class="cajas"></br>
+      
+      
+            <label for="telefono">Elija habitacion</label></br>
+            <input type="number" name="telefono" id="telefono" class="cajas"></br>
+
+            <label for="telefono">Telefono</label></br>
+            <input type="tel" name="telefono" id="telefono" class="cajas"></br>
+
+            <label for="llegada">Fecha y hora de llegada</label></br>
+            <input type="datetime-local" id="llegada" name="fecha-hora-llegada" class="cajas">
+            </br>
+            <label for="llegada">Fecha de salida</label></br>
+            <input type="datetime-local" id="llegada" name="fecha-hora-llegada" class="cajas">
+            </br>
+         
+            <label for="estadia">Días de permanencia</label></br>
+           <select id="estadia" class="cajas">
+             <option value="1" label="1">
+             <option value="2" label="2">
+             <option value="3" label="3">
+             <option value="4" label="4">
+             <option value="5" label="5">
+               
+           </select></br>
+            
+           
+           
+            <input type="submit" value="enviar" name="submit" class="btn">
+      
+      </form>
+      
+            
+      
+        </div>
+      </div>
+</body>
+</html>

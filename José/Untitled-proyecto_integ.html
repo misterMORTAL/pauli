@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang"es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.ccs">
+    <title>Login</title>
+
+</head>
+<style>
+   div {
+        margin: 0;
+        padding: 10;
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        padding: 10;
+        box-sizing: border-box;
+    }
+    .form-Inicio{
+        width: 400px;
+        background: rgb(6, 61, 64);
+        padding: 30px;
+        margin: auto;
+        margin-top: 100px;
+        border-radius: 4px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(255, 242, 242);
+    }
+    .form-register{
+        width: 400px;
+        background: rgb(8, 131, 137);
+        padding: 30px;
+        margin: auto;
+        margin-top: 100px;
+        border-radius: 4px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(8, 0, 249);
+
+    }
+    .form-register h4{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .controls{
+        width: 100%;
+        background: rgb(2, 56, 66);
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 17px;
+        border: 1px solid;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        color: rgb(219, 124, 124);
+    }
+    .form-register p{
+        height: 40px;
+        text-align: center;
+        font-size: 18px;
+    }
+    .form-register a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    .form-register .botons{
+        width: 100%;
+        background: rgba(4, 0, 255, 0.683);
+        border: rgba(86, 13, 13, 0.511);
+        padding: 12px;
+        font-variation-settings: initial;
+    }
+    h4{
+        font-style: italic;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: xx-large;
+        
+    }
+
+</style>
+
+<body>
+    <div id="container_demo" style="box-sizing: border-box;" >
+        <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+        <a class="hiddenanchor" id="toregister"></a>
+        <a class="hiddenanchor" id="tologin"></a>
+        <div id="wrapper">
+            <div id="login"section class="form-Inicio">
+                <form  action="mysuperscript.php" autocomplete="on"> 
+                    <h1>Login (Hotel Estancia)</h1> 
+                    <p> 
+                        <label for="username" class="uname" data-icon="u" >Escriba su correo</label>
+                        <input id="username" name="username" required="required" type="text" placeholder="mi_usuario o mail@mail.com"/>
+                    </p>
+                    <p> 
+                        <label for="password" class="youpasswd" data-icon="p"> Su contraseña </label>
+                        <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" /> 
+                    </p>
+                    <p class="keeplogin"> 
+                        <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+                        <label for="loginkeeping">Recordar mi eleccion</label>
+                    </p>
+                    <p> 
+                        <input type="submit" value="Ingrese" /> 
+                    </p>
+                    <p class="change_link">
+                        No tiene cuenta?
+                        <a href="#toregister" class="form-register .botons">Crear cuenta</a>
+                    </p>
+                </form>
+            </div>
+    
+            <div id="register" section class="form-register">
+                <form  action="mysuperscript.php" autocomplete="on"> 
+                    <h1> Crear cuenta </h1> 
+                    <p> 
+                        <label for="usernamesignup" class="uname" data-icon="u">Nombre de usuario</label>
+                        <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mi_usuario690" />
+                    </p>
+                    <p> 
+                        <label for="emailsignup" class="youmail" data-icon="e" >Escriba su correo</label>
+                        <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mail@gmail.com"/> 
+                    </p>
+                    <p> 
+                        <label for="passwordsignup" class="youpasswd" data-icon="p">Escriba una contraseña </label>
+                        <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                    </p>
+                    <p> 
+                        <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Confirme su contraseña</label>
+                        <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                    </p>
+                    <p class="signin button"> 
+                        <input type="submit" value="Crear"/> 
+                    </p>
+                    <p class="change_link">  
+                        Ya tiene cuenta?
+                        <a href="#tologin" class="to_register">ir a Login</a>
+                    </p>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    </body>
+    

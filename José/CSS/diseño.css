@@ -1,0 +1,38 @@
+body{
+    margin: 0%;
+}
+.navbar-brand{
+    margin-left: 20px;
+}
+
+.titulo{
+    height: 400px;
+    background-image: url(../IMG/Fondo.jpeg);
+    backdrop-filter: 4px;
+    background-size: cover;
+    background-position: center;
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0, 5);
+    background-blend-mode: darken;
+}
+#primer{
+    font-size: 100px;
+    background-color: transparent;
+}
+#frase{
+    background-color: transparent;
+}
+.container{
+    margin-top: 20px;
+    margin-bottom: 20ex;
+    margin-left: 125px;
+}
+.flex-fill{
+    margin-right: 5em;
+}
+.footer{
+    color: aliceblue;
+}
+button{
+    color: aliceblue;
+}
